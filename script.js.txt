@@ -1,0 +1,27 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const photoGrid = document.getElementById("photoGrid");
+  const videoGrid = document.getElementById("videoGrid");
+
+  const photos = [
+    "https://via.placeholder.com/300x200.png?text=Photo+1",
+    "https://via.placeholder.com/300x200.png?text=Photo+2"
+  ];
+
+  const videos = [
+    "https://www.w3schools.com/html/mov_bbb.mp4",
+    "https://www.w3schools.com/html/movie.mp4"
+  ];
+
+  photos.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    photoGrid.appendChild(img);
+  });
+
+  videos.forEach(src => {
+    const video = document.createElement("video");
+    video.src = src;
+    video.controls = true;
+    videoGrid.appendChild(video);
+  });
+});

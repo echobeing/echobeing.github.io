@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Media Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>My Media Gallery</h1></header>
+  <main>
+    <section id="gallery">
+      <h2>Photos</h2>
+      <div class="media-grid" id="photoGrid"></div>
+
+      <h2>Videos</h2>
+      <div class="media-grid" id="videoGrid"></div>
+    </section>
+  </main>
+  <footer>&copy; 2025 My Media Gallery</footer>
+  <script src="script.js"></script>
+</body>
+</html>
